@@ -1,16 +1,15 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Script gets filepath and prints its content in convenient for reading format.
 
 # Quickstart
 
-[TODO]
-
-Example of script launch on Linux, Python 3.5:
+Example of script launch on Mac OS:
 
 ```bash
 
-$ python pprint_json.py <path to file>
+python pprint_json.py <path to file>
+
 {
          "geometry": {
             "coordinates": [
