@@ -12,5 +12,12 @@ def pretty_print_json(json_file_content):
 
 
 if __name__ == '__main__':
-    file_path = sys.argv[1]
-    print(pretty_print_json(load_data(file_path)))
+    try:
+        file_path = sys.argv[1]
+        print(pretty_print_json(load_data(file_path)))
+    except FileNotFoundError:
+        print('No file')
+    except json.decoder.JSONDecodeError:
+        print('Troubles with content of json file')
+    except IndexError:
+        print('You did not write the name of file')
